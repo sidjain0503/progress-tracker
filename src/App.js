@@ -1,24 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './Home';
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom"
+import Header from './Components/Header/Header';
+import Tasks from './Components/Tasks/Tasks';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <ToastContainer position='top-center' />
+
+     <Routes>
+     <Route path='*' element={<><h1 style={{ textAlign: "center" }}>Page Not  Found </h1></>} />
+
+     <Route path='/other' element={<><Header/><Tasks ttype={"other"}/></>} />
+     <Route path='/college' element={<><Header/><Tasks ttype={"college"}/></>} />
+     <Route path='/programming' element={<><Header/><Tasks ttype="programming"/></>} />
+     <Route path='/' element={<><Header/><Home/></>} />
+
+     </Routes>
+    </>
   );
 }
 

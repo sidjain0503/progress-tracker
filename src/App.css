@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+.home{
+  height: 100vh;
+  margin: 0px auto;
+  font-family: "Manrope";
+  border: 1px solid #dddd;
+  overflow-y: scroll;
+}
+.home>h1{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.tasks_progress{
+  width: 90%;
+  margin: 20px auto 0px auto;
+  height: 150px;
+  /* border:solid 1px  #4D9DF8; */
+  border-radius: 6px;
+  display: flex;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task_num{
+  background: #4D9DF8;
+  width: 40%;
+  height: 100px;
+  margin: 20px auto 0px auto;
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px;
+  justify-content: space-between;
+
+}
+.task_num>strong{
   color: white;
+  font-size: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.task_num>span{
+  color: white;
+  font-size: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.percentage{
+  width: 80%;
+  margin: 10px auto;
+  background: #4D9DF8;
+  padding: 10px;
+  display: flex;
+  border-radius: 6px;
+  justify-content: space-between;
+}
+.percentage>strong{
+  color: white;
+  font-size: 22px;
+}
+.graph{
+  width: 85%;
+  margin: 10px auto;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.addTask{
+  width: 90%;
+  margin:10px  auto;
+  display: flex;
+  justify-content: center;
+}
+.addTask>button{
+  width: 85%;
+  margin: 10px auto;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
