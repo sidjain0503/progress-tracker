@@ -1,0 +1,12 @@
+th, td {
+    border-collapse: collapse;
+  }
+
+
+  .task-table>tr>td, .task-table>tr>th {
+    border: 1px solid #dddddd;
+
+    font-family: Manrope;
+    padding: 2% 50px;
+    text-align: left;
+}

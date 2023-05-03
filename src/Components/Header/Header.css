@@ -18,3 +18,14 @@
     font-family: "Manrope";
 }
 
+
+@media screen and (max-width:500px) {
+
+    .link{
+        padding: 10px;
+        font-weight: bolder;
+    }
+    #link{
+        display: none;
+    }
+}

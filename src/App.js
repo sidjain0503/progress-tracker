@@ -6,6 +6,7 @@ import Header from './Components/Header/Header';
 import Tasks from './Components/Tasks/Tasks';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Networktable from './Components/NetworkTable/Networktable';
 
 
 
@@ -17,6 +18,7 @@ function App() {
      <Routes>
      <Route path='*' element={<><h1 style={{ textAlign: "center" }}>Page Not  Found </h1></>} />
 
+     <Route path='/network' element={<><Header/><Networktable/></>} />
      <Route path='/other' element={<><Header/><Tasks ttype={"other"}/></>} />
      <Route path='/college' element={<><Header/><Tasks ttype={"college"}/></>} />
      <Route path='/programming' element={<><Header/><Tasks ttype="programming"/></>} />

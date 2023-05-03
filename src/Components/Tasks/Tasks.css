@@ -7,7 +7,7 @@
 .status{
     width: max-content;
     height: 20px;
-    background-color: #c3edd5;
+    background:linear-gradient(#0dec3e ,#44d32ad6) ;
     padding: 10px;
     margin: 10px;
     border-radius: 6px;
